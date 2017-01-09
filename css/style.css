@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans');
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: 'Josefin Sans';
+}
+
+h2 {
+    font-size: 1.8em;
+    font-family: 'Josefin Sans';
+}
+
+h3 {
+    font-size: 1.5em;
+    font-family: 'Josefin Sans';
+}
+
+p {
+    font-family:
+    font-size: 1.15em;
+}
+
+img {
+    max-width: 100%;
+}
+
+#header {
+    background-color: rgba(240, 240, 240, 1);
+    width: 100%;
+    height: 85px;
+    margin: auto;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    border-bottom-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+#title {
+    text-indent: 10px;
+
+}
+
+#tag {
+    text-align: right;
+}
+
+.button {
+    font-family: 'Josefin Sans';
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#spacer {
+    height: 85px;
+}
+
+.content {
+    background-color: rgba(240, 240, 240, 1);
+    margin-bottom: 5px;
+}
+
+.project {
+    margin: 3px 0px 3px 0px;
+}
+
+#icons {
+    text-align: center;á
+}
+
+/*@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.75em;
+    }
+    h3 {
+        font-size: 1.25em;
+    }
+} */
