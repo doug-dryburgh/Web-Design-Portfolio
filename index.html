@@ -18,9 +18,15 @@
             </div>
             <!--Buttons-->
             <div class="row">
-                <div id="button1" class="col-xs-4 button">about</div>
-                <div id="button2" class="col-xs-4 button">projects</div>
-                <div id="button3" class="col-xs-4 button">contact</div>
+                <a href="#about">
+                    <div id="button1" class="col-xs-4 button">about</div>
+                </a>
+                <a href="#projects">
+                    <div id="button2" class="col-xs-4 button">projects</div>
+                </a>
+                <a href="#contact">
+                    <div id="button3" class="col-xs-4 button">contact</div>
+                </a>
             </div>
         </div>
         <!--spacer-->
@@ -46,31 +52,40 @@
                     <!--Projects here-->
                     <div class="col-xs-9">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-4 project"> <img src='images/puravida.JPG' alt='missing'></div>
+                            <div class="col-xs-12 col-sm-4 project">
+                                <a href="#"><img src='images/puravida.JPG' alt='missing'></a>
+                            </div>
                             <div class="col-xs-12 col-sm-8">
                                 <h3>Pura Vida Photography</h3>
-                                <p>Some details about this project go here</p>
+                                <p>I have been passionate about photography for nearly a decade. In this time I have learned myself or from those around me while taking on freelance jobs. I designed and built this website to showcase my favourite work.</p>
+                                <p>With this design I utilized css transitions to make a pleasing slideshow on the homepage. In addition I modified and implimented the blueimp gallery plugin for my galleries as well as used basic javascript to animate a slide-out menu. The website is fully responsive to look good on all platforms.</p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12 col-sm-4 project"> <img src='images/localweather.JPG' alt='missing'></div>
+                            <div class="col-xs-12 col-sm-4 project">
+                                <a href="#"><img src='images/localweather.JPG' alt='missing'></a>
+                            </div>
                             <div class="col-xs-12 col-sm-8">
                                 <h3>Show the Local Weather</h3>
-                                <p>Some details about this project go here</p>
+                                <p>This site was a project I completed through my studies on Free Code Camp. The objective was to utilize the open weather map api in order to show the current weather in the user's current location. I customized the design with custom background which illistrate the weather conditions.</p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12 col-sm-4 project"> <img src='images/wikipediaviewer.JPG' alt='missing'></div>
+                            <div class="col-xs-12 col-sm-4 project">
+                                <a href="#"><img src='images/wikipediaviewer.JPG' alt='missing'></a>
+                            </div>
                             <div class="col-xs-12 col-sm-8">
                                 <h3>Wikipedia Viewer</h3>
-                                <p>Some details about this project go here</p>
+                                <p>In this Free Code Camp assisgnment I built a page utilizing the MediaWiki api. The requirements included being able to search for any topic, and return the results from Wikipedia. In addition the user was to be able to click a button to see a random article. I customized this page further with some astecially pleasing css animations.</p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12 col-sm-4 project"> <img src='images/randomquote.JPG' alt='missing'></div>
+                            <div class="col-xs-12 col-sm-4 project">
+                                <a href="#"><img src='images/randomquote.JPG' alt='missing'></a>
+                            </div>
                             <div class="col-xs-12 col-sm-8">
                                 <h3>Random Quote Machine</h3>
-                                <p>Some details about this project go here</p>
+                                <p>This Free Code Camp assignment was an introduction to using an api. I utilized the forismatic api in order to show a random inspiring quote. An additional requirement was to provide the functionality for the user to tweet that quote from the page. I used css gradients to further set a positive tone to the page.</p>
                             </div>
                         </div>
                     </div>
@@ -85,16 +100,31 @@
                     <div class="col-xs-9">
                         <p>For more information on any of my projects please use one of the links below to get in contact. To enjoy my creativity from behind the camera click the icon to see my photography portfolio!</p>
                         <div id="icons" class="row">
-                            <div class="col-xs-3"> <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i> </div>
-                            <div class="col-xs-3"> <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i> </div>
-                            <div class="col-xs-3"> <i class="fa fa-github fa-2x" aria-hidden="true"></i> </div>
-                            <div class="col-xs-3"> <i class="fa fa-camera fa-2x" aria-hidden="true"></i> </div>
+                            <a href="#">
+                                <div class="col-xs-3"> <i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i> </div>
+                            </a>
+                            <a href="#">
+                                <div class="col-xs-3"> <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> </div>
+                            </a>
+                            <a href="#">
+                                <div class="col-xs-3"> <i class="fa fa-github fa-3x" aria-hidden="true"></i> </div>
+                            </a>
+                            <a href="#">
+                                <div class="col-xs-3"> <i class="fa fa-camera fa-3x" aria-hidden="true"></i> </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/js.js"></script>
 </body>
 
 </html>
+
+<!-- Credits
+1) Layout - Bootstrap: getbootstrap.com
+2) Icons - fontawesome: fontawesome.io
+3) Assistance understanding and implimenting the smooth scroll jquery thanks to this post: https://www.abeautifulsite.net/smoothly-scroll-to-an-element-without-a-jquery-plugin-2 -->

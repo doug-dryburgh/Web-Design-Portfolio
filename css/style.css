@@ -1,9 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Dosis|Josefin+Sans');
 html,
 body {
     height: 100%;
     width: 100%;
     background-color: black;
+}
+
+@keyframes btnHover {
+    0% {
+        background-color: rgba(240, 240, 240, 1);
+    }
+    15% {
+        background-color: rgba(200, 200, 200, 1);
+    }
+    100% {
+        background-color: rgba(200, 200, 200, 1);
+    }
+}
+
+@keyframes imgHover {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(1.10)
+    }
+    100% {
+        transform: scale(1)
+    }
 }
 
 h1 {
@@ -22,18 +46,42 @@ h3 {
 }
 
 p {
-    font-family:
+    font-family: 'Dosis', sans-serif;
     font-size: 1.15em;
 }
 
 img {
     max-width: 100%;
 }
+img:hover {
+        animation-name: imgHover;
+    animation-duration: 1s;
+}
+
+a div {
+    color: black;
+}
+
+a:link i {
+    color: black;
+}
+
+a:visited i {
+    color: black;
+}
+
+a:hover i {
+    color: darkblue;
+}
+
+a:active i {
+    color: blue;
+}
 
 #header {
     background-color: rgba(240, 240, 240, 1);
     width: 100%;
-    height: 85px;
+    height: 88px;
     margin: auto;
     position: fixed;
     top: 0px;
@@ -45,7 +93,6 @@ img {
 
 #title {
     text-indent: 10px;
-
 }
 
 #tag {
@@ -58,8 +105,13 @@ img {
     font-size: 1.1em;
 }
 
+.button:hover {
+    animation-name: btnHover;
+    animation-duration: 4s;
+}
+
 #spacer {
-    height: 85px;
+    height: 88px;
 }
 
 .content {
@@ -72,8 +124,10 @@ img {
 }
 
 #icons {
-    text-align: center;á
+    text-align: center;
+    á
 }
+
 
 /*@media screen and (max-width: 600px) {
     h1 {
