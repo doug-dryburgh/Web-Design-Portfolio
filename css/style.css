@@ -4,18 +4,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: black;
-}
-
-@keyframes btnHover {
-    0% {
-        background-color: rgba(240, 240, 240, 1);
-    }
-    15% {
-        background-color: rgba(200, 200, 200, 1);
-    }
-    100% {
-        background-color: rgba(200, 200, 200, 1);
-    }
+    overflow-x: hidden;
 }
 
 @keyframes imgHover {
@@ -53,8 +42,9 @@ p {
 img {
     max-width: 100%;
 }
+
 img:hover {
-        animation-name: imgHover;
+    animation-name: imgHover;
     animation-duration: 1s;
 }
 
@@ -106,8 +96,8 @@ a:active i {
 }
 
 .button:hover {
-    animation-name: btnHover;
-    animation-duration: 4s;
+    background-color: rgba(200, 200, 200, 1);
+    transition: .75s;
 }
 
 #spacer {
@@ -125,9 +115,11 @@ a:active i {
 
 #icons {
     text-align: center;
-    á
 }
 
+span {
+    visibility: hidden;
+}
 
 /*@media screen and (max-width: 600px) {
     h1 {
