@@ -2,200 +2,214 @@
 <html lang="en">
 
 <head>
-    <title>Web Design Portfolio</title>
-    <meta name="description" content="The web design portfolio for Doug Dryburgh.">
+    <title>Doug Dryburgh - Web Design Portfolio</title>
     <meta charset="UTF-8">
+    <meta name="description" content="The web design portfolio for designer Doug Dryburgh">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css"> </head>
 
 <body>
-    <div id="pageContainer" class="container">
-        <div id="header">
-            <div>
-                <h1>doug dryburgh</h1>
-                <h2>web design | photography</h2> </div>
-            <!--Buttons-->
-            <div>
+    <div class="container-fluid">
+        <div class="nav">
+            <div id="menuFull">
                 <a href="#about">
-                    <div class="button">about</div>
+                    <h5>ABOUT</h5>
                 </a>
-                <a href="#projects">
-                    <div class="button">projects</div>
+                <a href="#port">
+                    <h5>PORTFOLIO</h5>
                 </a>
                 <a href="#contact">
-                    <div class="button">contact</div>
+                    <h5>CONTACT</h5>
                 </a>
             </div>
-        </div>
-        <div id="spacer"></div>
-        <!--About-->
-        <div class="row"> <span class="anchor" id="about"></span>
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 content">
-                <div class="col-xs-3 col-sm-2">
-                    <h2>about</h2> </div>
-                <div class="col-xs-9 col-sm-10">
-                    <p>Hello! My name is Doug and I am a self studying front end developer. Welcome to my portfolio.</p>
-                    <p>Since my first introduction to HTML in high school I've been hooked. In 2016 I took the plunge and decided to make a career change into web development. My focus has been on updating my HTML and CSS fundamentals while learning Javascript and jQuery. I have utilized online resources for training and guidance. Fundamental in my education has been <a href="https://www.freecodecamp.com" target="_blank">Free Code Camp</a> and its forum full of extremely helpful campers. I've also been involved in study groups and have developed my own projects for both practice and fun.
-                        <p>Why should you hire me?</p>
-                        <ul>
-                            <li>Experienced with: HTML, CSS, JavaScript, jQuery, Bootstrap, Git, Website Deployment and Hosting;</li>
-                            <li>Knowledgable with: Wordpress, Photoshop;</li>
-                            <li>Developing my fullstack skills by studying the MEAN stack;</li>
-                            <li>Extremely motivated, and eager to learn more.</li>
-                        </ul>
-                        <p>See my project history on <a href="https://github.com/doug-dryburgh" target="_blank">Github</a> </p>
+            <div id="menuSml">
+                <h5>MENU</h5>
+                <div id="menuContent">
+                    <a href="#about">
+                        <h5>ABOUT</h5>
+                    </a>
+                    <a href="#port">
+                        <h5>PORTFOLIO</h5>
+                    </a>
+                    <a href="#contact">
+                        <h5>CONTACT</h5>
+                    </a>
                 </div>
             </div>
         </div>
-        <!--Projects-->
-        <div class="row"> <span class="anchor" id="projects"></span>
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 content">
-                <div class="col-xs-3 col-sm-2">
-                    <h2>projects</h2> </div>
-                <div class="col-xs-9 col-sm-10">
-                    <!--Pura Vida-->
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <a href="http://www.puravida.ddryburugh.com" target="_blank"><img src='images/puravida.JPG' alt='missing'></a>
-                        </div>
-                        <div class="col-xs-12 col-sm-8">
-                            <h3>Pura Vida Photography</h3>
-                            <p>I have been passionate about photography for nearly a decade. This is another example of an area I've successfully self studied and have ultimately been able to freelance in. I designed and built this website to showcase my favourite work.</p>
-                            <p>With this design I utilized CSS transitions to make a pleasing slideshow on the homepage. In addition I modified and implemented the blueimp gallery plug-in for my galleries as well as used JavaScript to animate a slide-out menu. The website is fully responsive and looks professional on all platforms.</p>
-                            <p>Initially completed: Jan 2017</p>
-                        </div>
-                    </div>
+        <!--Welcome-->
+        <div class="welcome contentFlex">
+            <h1>DOUG DRYBURGH</h1>
+            <h2>- WEB DEVELOPER -</h2>
+        </div>
+        <!--About-->
+        <span class="anchor" id="about"></span>
+
+        <div class="about contentFlex">
+            <h3>ABOUT</h3>
+            <div class="col-xs-12 col-sm-10">
+                <div class="col-xs-12 col-sm-4"> <img src="images/me.jpg" alt="a photo of me"> </div>
+                <div class="col-xs-12 col-sm-8">
+                    <h6>Hello! My name is Doug and I am a studying web developer. Welcome to my portfolio.</h6>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-10">
+                <p>Since my first introduction to HTML in high school I've been hooked. In 2016 I took the plunge and decided to make a career change into web development.</p>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-sm-offset-1">
+                <p>My focus began by updating my front end development skills. I have refreshed my HTML and CSS knowledge while applying JavaScript and jQuery to my projects. I am now rounding out my knowledge by studying back end principles using Node and the MEAN stack. </p>
+            </div>
+            <div class="col-xs-12 col-sm-10">
+                <p>I've come this far thanks to passion and some excellent online resources. Fundamental in my education has been <a href="https://www.freecodecamp.com" target="_blank">Free Code Camp</a> and its forum full of extremely helpful campers. I've also been involved in study groups and have developed my own projects for both practice and fun.</p>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-sm-offset-1">
+                <p>I am ready to take the next step and find an entry-level position in the industry. I'm hungry for knowledge and know this would be the most effective way for me to continue learning and improving. My enthusiasm and passion will be a great addition to your team!</p>
+            </div>
+        </div>
+        <!--Hire me-->
+        <div class="hire contentFlex">
+            <!--  <div class="col-xs-12 col-sm-10"> -->
+            <div>
+                <h3>Why should you hire me?</h3>
+            </div>
+            <div class="col-xs-12 col-sm-10">
+                <ul>
+                    <li>Experienced with: HTML, CSS, JavaScript, jQuery, Bootstrap, Git, Website Deployment and Hosting;</li>
+                    <li>Knowledgeable with: Wordpress, Photoshop;</li>
+                    <li>Learning: Node and the MEAN stack;</li>
+                    <li>Extremely motivated, and eager to learn more;</li>
+                    <li>Professional experience working with clients;</li>
+                    <li>I make excellent Spotify play lists.</li>
+                </ul>
+            </div>
+            <div>
+                <p>Full work experience available <a href="https://www.linkedin.com/in/doug-dryburgh-7056b513b/" target="_blank">here</a></p>
+            </div>
+            <!--  </div> -->
+        </div>
+        <!--Portfolio-->
+        <span class="anchor" id="port"></span>
+        <div class="port contentFlex">
+            <h3>Portfolio</h3>
+            <div class="col-xs-12 col-sm-10">
+                <!--Pura Vida-->
+                <div class="projectSpace">
+                    <h4>Pura Vida Photography</h4>
+                    <a href="http://www.puravida.ddryburugh.com" target="_blank"> <img src="images/puravida.jpg" alt="pura vida photography"> </a>
+                    <p>I have been passionate about photography for nearly a decade. This is another example of an area I've successfully self studied and have ultimately freelanced in. I designed and built this website to showcase my favourite work.</p>
+                    <p>With this design I utilized CSS transitions to make a pleasing slide show on the homepage. In addition I modified and implemented the blueimp gallery plug-in for my galleries as well as used JavaScript to animate a slide-out menu. The website is fully responsive and looks professional on all platforms.</p>
+                </div>
+
+                <div class="spacer"></div>
+                <!--Simon-->
+                <div class="projectSpace">
+
+                    <h4>Simon Says</h4>
+                    <a href="http://www.simon.ddryburugh.com" target="_blank"> <img src="images/simon.JPG" alt="simon says"> </a>
+                    <p>This assignment required building a Simon style memory game. There were many project requirements including: having two different difficulty modes and adding simple audio. Also important was that it look good on different sized viewports.</p>
+                    <p> I utilized CSS flexbox for the first time. In addition I integrated two add-ons that allows for colour animation through the jQuery animate method, as well as animating the toggleClass method.</p>
+                </div>
+                <div class="spacer"></div>
+
+                <!--Word Scramble-->
+                <div class="projectSpace">
+
+                    <h4>Word Scramble</h4>
+                    <a href="http://www.wordscramble.ddryburugh.com" target="_blank"> <img src="images/wordscramble.JPG" alt="word scramble"> </a>
+                    <p>This was a self assigned passion project. I wanted further practice with jQuery combined with the challenge of validating the user's input. The app ended up being educational for myself and the users!</p>
+                    <p>This project made more use of CSS flexbox, which has become an important tool for me. A fundamental part of the app is validating the user's input to determine if they submitted a correct word. I sourced a word list, and created a function to accomplish this.</p>
+                </div>
+            </div>
+        </div>
+        <!--More Projects-->
+        <div class="morePort contentFlex">
+            <h3>More Projects</h3>
+            <div class="col-xs-12 col-sm-10">
+                <div class="row">
+
                     <!--Mad Minute-->
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <a href="http://www.madminute.ddryburugh.com" target="_blank"><img src='images/madminute.JPG' alt='missing'></a>
-                        </div>
-                        <div class="col-xs-12 col-sm-8">
-                            <h3>Mad Minute</h3>
-                            <p>The inspiration for this project came from a primary school exercise my teacher used to have us do. We would be given a sheet of math problems and we would have to complete as many as possible in one minute. I've recreated this exercise in a web app. </p>
-                            <p>The program will randomly generate a series of addition, subtraction, multiplication, or division problems. The code will verify the answer to let the user know how well they've done at the end. This project can easily be scaled to include different levels of difficulty in the future.</p>
-                            <p>Initially completed: March 2017</p>
-                        </div>
-                    </div>
-                    <!--Word Scramble-->
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <a href="http://www.wordscramble.ddryburugh.com" target="_blank"><img src='images/wordscramble.JPG' alt='missing'></a>
-                        </div>
-                        <div class="col-xs-12 col-sm-8">
-                            <h3>Word Scramble</h3>
-                            <p>This was a self assigned passion project. I wanted further practice with jQuery combined with the challenge of validating the user's input. The app ended up being educational for myself and the users!</p>
-                            <p>This project made more use of CSS flexbox, which has become an important tool for me. A fundamental part of the app is validating the user's input to determine if they submitted a correct word. I sourced a wordlist, and created a function to accomplish this.</p>
-                            <p>Initially completed: March 2017</p>
-                        </div>
-                    </div>
-                    <!--Simon Says-->
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <a href="http://www.simon.ddryburugh.com" target="_blank"><img src='images/simon.JPG' alt='missing'></a>
-                        </div>
-                        <div class="col-xs-12 col-sm-8">
-                            <h3>Simon Says</h3>
-                            <p>This assignment required building a Simon style memory game. There were many requirements including having two different difficulty modes and adding simple audio. Also important was that it look good on different sized viewports.</p>
-                            <p> I utilized CSS flexbox for the first time. In addition I integrated two add-ons that allows for colour animation through the jQuery animate method, as well as animating the toggleClass method.</p>
-                            <p>Initially completed: March 2017</p>
-                        </div>
-                    </div>
-                    <!--Tic Tac Toe-->
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <a href="http://www.tictactoe.ddryburugh.com" target="_blank"><img src='images/tictactoe.JPG' alt='missing'></a>
-                        </div>
-                        <div class="col-xs-12 col-sm-8">
-                            <h3>Tic Tac Toe</h3>
-                            <p>This fun project required building a Tic Tac Toe game. I'm proud of the design and feel of the game but the real challenge was to design the computer's AI. </p>
-                            <p>I started first with a 'noob' mode in which the computer chooses at random. Once I understood this process I then implemented a 'medium' mode in which the computer uses far greater logic to try and best the player.</p>
-                            <p>Initially completed: February 2017</p>
-                        </div>
-                    </div>
-                    <!--Clock-->
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <a href="http://www.clock.ddryburugh.com" target="_blank"><img src='images/clock.PNG' alt='missing'></a>
-                        </div>
-                        <div class="col-xs-12 col-sm-8">
-                            <h3>Pomodoro Clock</h3>
-                            <p>In this FCC project I designed a countdown timer with a sleek and minimal interface.</p>
-                            <p> The features allow you to choose a task length between 1-90 minutes, with a break interval of 1-30 minutes. The app will display the remaining time in the session/break. A progress bar also displays the percentage of the session left. Alongside this I added some animation to make the app sexy.</p>
-                            <p>Initially completed: February 2017</p>
-                        </div>
+                    <div class="col-sm-6">
+                        <h4>Mad Minute</h4>
+                        <a href="http://www.madminute.ddryburugh.com" target="_blank"> <img src="images/madminute.JPG" alt="mad minute"> </a>
+                        <p>The inspiration for this project came from a primary school exercise my teacher used to have us do. We would be given a sheet of math problems and would have to complete as many as possible in one minute. I've recreated this exercise in a web app. </p>
+                        <p>The program will randomly generate a series of addition, subtraction, multiplication, or division problems. The code will verify the answer to let the user know how well they've done at the end. This project can easily be scaled to include different levels of difficulty in the future.</p>
                     </div>
                     <!--Calc-->
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <a href="http://www.calc.ddryburugh.com" target="_blank"><img src='images/calculator.JPG' alt='missing'></a>
-                        </div>
-                        <div class="col-xs-12 col-sm-8">
-                            <h3>Calculator</h3>
-                            <p>This app allows the user to complete basic arithmetic functions. It allows addition, subtraction, multiplication and division.</p>
-                            <p> Features include being able to chain multiple operations, use a decimal place, as well as integrating keyboard input.</p>
-                            <p>Initially completed: February 2017</p>
-                        </div>
+                    <div class="col-sm-6">
+                        <h4>Calculator</h4>
+                        <a href="http://www.calc.ddryburugh.com" target="_blank"> <img src="images/calculator.JPG" alt="calculator"> </a>
+                        <p>This app allows the user to complete basic arithmetic functions. It allows addition, subtraction, multiplication and division.</p>
+                        <p> Features include being able to chain multiple operations, use a decimal place, as well as integrating keyboard input.</p>
                     </div>
+                </div>
+                <div class="row">
+
+                    <!--Tic Tac Toe-->
+                    <div class="col-sm-6">
+                        <h4>Tic Tac Toe</h4>
+                        <a href="http://www.tictactoe.ddryburugh.com" target="_blank"> <img src="images/tictactoe.JPG" alt="tic tac toe"> </a>
+                        <p>This fun project required building a Tic Tac Toe game. I'm proud of the design and feel of the game but the real challenge was to design the computer's AI. </p>
+                        <p>I started first with a 'noob' mode in which the computer chooses at random. Once I understood this process I then implemented a 'medium' mode in which the computer uses far greater logic to try and best the player.</p>
+                    </div>
+                    <!--Clock-->
+                    <div class="col-sm-6">
+                        <h4>Pomodoro Clock</h4>
+                        <a href="http://www.clock.ddryburugh.com" target="_blank"> <img src="images/clock.JPG" alt="pomodoro clock"> </a>
+                        <p>In this FCC project I designed a countdown timer with a sleek and minimal interface.</p>
+                        <p> The features allow you to choose a task length between 1-90 minutes, with a break interval of 1-30 minutes. The app will display the remaining time in the session/break. A progress bar also displays the percentage of the session left. Alongside this I added some animation to make the app sexier.</p>
+                    </div>
+                </div>
+                <div class="row">
+
                     <!--Local Weather-->
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <a href="http://www.localweather.ddryburugh.com" target="_blank"><img src='images/localweather.JPG' alt='missing'></a>
-                        </div>
-                        <div class="col-xs-12 col-sm-8">
-                            <h3>Show the Local Weather</h3>
-                            <p>This was an early FCC project. The objective was to utilize the <a href="https://openweathermap.org/api" target="_blank">open weather api</a> in order to show the weather in the user's current location.</p>
-                            <p> I used a second API to determine the user's location based on their IP address. With this information I am able to return the weather conditions. I customized the design with backgrounds that illustrate the weather conditions and the app looks great on both desktop and mobile platforms.</p>
-                            <p>Initially completed: December 2016</p>
-                        </div>
-                    </div>
-                    <!--Wikipedia-->
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <a href="http://www.wikipediaviewer.ddryburugh.com" target="_blank"><img src='images/wikipediaviewer.JPG' alt='missing'></a>
-                        </div>
-                        <div class="col-xs-12 col-sm-8">
-                            <h3>Wikipedia Viewer</h3>
-                            <p>In this Free Code Camp assignment I was required to build a page utilizing the MediaWiki API. The requirements included being able to search for any topic, and return the results from Wikipedia. In addition the user was to be able to click a button to see a random article. The page was customized further with some aesthetically pleasing CSS animations.</p>
-                            <p>Initially completed: December 2016</p>
-                        </div>
+                    <div class="col-sm-6">
+                        <h4>Local Weather</h4>
+                        <a href="http://www.localweather.ddryburugh.com" target="_blank"> <img src="images/localweather.JPG" alt="local weather"> </a>
+                        <p>This was an early FCC project. The objective was to utilize the <a href="https://openweathermap.org/api" target="_blank">open weather api</a> in order to show the weather in the user's current location.</p>
+                        <p> I used a second API to determine the user's location based on their IP address. With this information I am able to return the weather conditions. I customized the design with backgrounds that illustrate the weather conditions and the app looks great on both desktop and mobile platforms.</p>
                     </div>
                     <!--Random Quote-->
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <a href="http://www.randomquote.ddryburugh.com" target="_blank"><img src='images/randomquote.JPG' alt='missing'></a>
-                        </div>
-                        <div class="col-xs-12 col-sm-8">
-                            <h3>Random Quote Machine</h3>
-                            <p>This Free Code Camp assignment was my first introduction to using an API. I utilized the <a href="http://forismatic.com/en/" target="_blank">forismatic api</a> in order to show a randomly generated inspiring quote. An additional requirement was to provide the functionality for the user to tweet that quote right from the page. I used CSS gradients to further set a positive tone to the page.</p>
-                            <p>Initially completed: December 2016</p>
-                        </div>
+                    <div class="col-sm-6">
+                        <h4>Random Quote Machine</h4>
+                        <a href="http://www.randomquote.ddryburugh.com" target="_blank"> <img src="images/randomquote.JPG" alt="random quote machine"> </a>
+                        <p>This Free Code Camp assignment was my first introduction to using an API. I utilized the <a href="http://forismatic.com/en/" target="_blank">forismatic api</a> in order to show a randomly generated inspiring quote. An additional requirement was to provide the functionality for the user to tweet that quote right from the page. I used CSS gradients to further set a positive tone to the page.</p>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <!--Wikipedia Viewer-->
+                    <div class="col-sm-6">
+                        <h4>Wikipedia Viewer</h4>
+                        <a href="http://www.wikipediaviewer.ddryburugh.com" target="_blank"> <img src="images/wikipedia.JPG" alt="wikipedia viewer"> </a>
+                        <p>In this Free Code Camp assignment I was required to build a page utilizing the MediaWiki API. The requirements included being able to search for any topic, and return the results from Wikipedia. In addition the user was to be able to click a button to see a random article. The page was customized further with some aesthetically pleasing CSS animations.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row"> <span class="anchor" id="contact"></span>
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 content">
-                <div class="col-xs-3 col-sm-2">
-                    <h2>contact</h2> </div>
-                <div class="col-xs-9 col-sm-10">
-                    <p>For more information on any of my projects please use one of the links below to get in contact. To enjoy my creativity from behind the camera click the icon to see my photography portfolio!</p>
-                    <div id="icons">
-                        <a href="mailto:douglas.dryburgh@gmail.com"> <i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i> </a>
-                        <a href="https://github.com/doug-dryburgh" target="_blank"> <i class="fa fa-github fa-3x" aria-hidden="true"></i> </a>
-                        <a href="https://www.linkedin.com/in/doug-dryburgh-7056b513b/" target="_blank"> <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i> </a>
-                        <a href="http://www.puravida.ddryburugh.com" target="_blank"> <i class="fa fa-camera fa-3x" aria-hidden="true"></i> </a>
-                    </div>
+        <!--Contact-->
+        <span class="anchor" id="contact"></span>
+
+        <div class="contact contentFlex">
+            <h3>Contact</h3>
+            <div class="col-xs-12 col-sm-10">
+                <div class="icons">
+                    <a href="mailto:douglas.dryburgh@gmail.com"> <i class="fa fa-envelope-o"></i> </a>
+                    <a href="https://github.com/doug-dryburgh" target="_blank"> <i class="fa fa-github"></i> </a>
+                    <a href="https://www.linkedin.com/in/doug-dryburgh-7056b513b/" target="_blank"> <i class="fa fa-linkedin"></i> </a>
+                    <a href="http://www.puravida.ddryburugh.com" target="_blank"> <i class="fa fa-camera"></i> </a>
                 </div>
             </div>
         </div>
     </div>
+    <!--Scripts-->
     <script src="https://use.fontawesome.com/00e02cdbce.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/js.js"></script>
 </body>
 
 </html>
-<!-- Credits
-1) Icons - fontawesome: fontawesome.io
-2) Assistance understanding and implimenting the smooth scroll jquery thanks to this post: https://www.abeautifulsite.net/smoothly-scroll-to-an-element-without-a-jquery-plugin-2 -->
+<!-- Credits:
+1)Background Images: https://static.pexels.com/photos/93405/pexels-photo-93405.jpeg
+                     https://pixabay.com/en/electricity-electronics-computer-1288717/
+2) Font: https://fonts.google.com/specimen/Poiret+One
+-->
