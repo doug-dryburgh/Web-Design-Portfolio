@@ -1,103 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis|Josefin+Sans');
 html,
 body {
-    height: 100%;
-    width: 100%;
     background-color: black;
-    overflow-x: hidden;
-}
-
-@keyframes imgHover {
-    0% {
-        transform: scale(1)
-    }
-    50% {
-        transform: scale(1.10)
-    }
-    100% {
-        transform: scale(1)
-    }
-}
-
-h1 {
-    font-size: 2em;
-    font-family: 'Josefin Sans';
-}
-
-h2 {
-    font-size: 1.8em;
-    font-family: 'Josefin Sans';
-}
-
-h3 {
-    font-size: 1.5em;
-    font-family: 'Josefin Sans';
-}
-
-p {
-    font-family: 'Dosis', sans-serif;
-    font-size: 1.15em;
-}
-
-img {
-    max-width: 100%;
-}
-
-img:hover {
-    animation-name: imgHover;
-    animation-duration: 1s;
-}
-
-a div {
-    color: black;
-}
-
-a:link i {
-    color: black;
-}
-
-a:visited i {
-    color: black;
-}
-
-a:hover i {
-    color: darkblue;
-}
-
-a:active i {
-    color: blue;
 }
 
 #header {
     background-color: rgba(240, 240, 240, 1);
     width: 100%;
-    height: 88px;
-    margin: auto;
     position: fixed;
-    top: 0px;
-    z-index: 1;
+    left: 0;
+    top: 0;
     border-bottom-style: solid;
     border-width: 5px;
     border-color: black;
+    z-index: 1;
 }
 
-#title {
-    text-indent: 10px;
+#header > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-#tag {
-    text-align: right;
+#header > div:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
 }
 
 .button {
     font-family: 'Josefin Sans';
     text-align: center;
     font-size: 1.1em;
-}
-
-.button:hover {
-    background-color: rgba(200, 200, 200, 1);
-    transition: .75s;
+    color: black;
 }
 
 #spacer {
@@ -109,23 +44,76 @@ a:active i {
     margin-bottom: 5px;
 }
 
-.project {
-    margin: 3px 0px 3px 0px;
-}
-
 #icons {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
-span {
+.anchor {
+    display: block;
+    height: 88px;
+    margin-top: -88px;
     visibility: hidden;
 }
 
-/*@media screen and (max-width: 600px) {
-    h1 {
-        font-size: 1.75em;
+img {
+    max-width: 100%;
+        box-shadow: 4px 4px 3px rgb(40, 40, 40);
+        margin-top: 20PX;
+
+}
+
+img:hover {
+    box-shadow: 0px 0px 10px blue;
+
+    transition: 1s;
+}
+
+
+
+h1 {
+    font-size: 2em;
+    font-family: 'Josefin Sans';
+    text-shadow: 1px 1px 2px rgb(110, 110, 110);
+}
+
+h2 {
+    font-size: 1.8em;
+    font-family: 'Josefin Sans';
+        text-shadow: 1px 1px 2px rgb(110, 110, 110);
+
+}
+
+h3 {
+    font-size: 1.5em;
+    font-family: 'Josefin Sans';
+}
+
+p,
+li {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.15em;
+}
+a:link {
+    color: darkblue;
+}
+a:visited {
+    color: darkblue;
+}
+a:hover {
+    color: blue;
+    text-decoration: none;
+}
+a:active {
+color: red;
+}
+
+
+@media only screen and (max-width: 425px) {
+    #header > div:nth-child(1) {
+        flex-direction: column;
     }
-    h3 {
-        font-size: 1.25em;
+    #spacer {
+        height: 141px;
     }
-} */
+}
