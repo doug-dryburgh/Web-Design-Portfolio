@@ -1,7 +1,7 @@
      @import url('https://fonts.googleapis.com/css?family=Poiret+One');
      html,
      body {
-         background-color: gray;
+         background-color: rgb(115, 160, 190);
      }
      /* NAV & RESPONSIVE MENU */
      
@@ -67,20 +67,20 @@
      
      .about {
          min-height: 800px;
-         background: radial-gradient(rgba(15, 145, 255, 1), rgba(0, 105, 190, 1));
+         background: linear-gradient(rgb(115, 160, 190), rgb(85, 130, 160));
      }
      
      .hire {
-         height: 400px;
-         background: radial-gradient(rgba(0, 125, 125, 1), rgba(0, 65, 65, 1));
+         min-height: 400px;
+         background: linear-gradient(rgb(85, 130, 160), rgb(55, 100, 130));
      }
      
      .port {
-         background: radial-gradient(rgba(15, 145, 255, 1), rgba(0, 105, 190, 1));
+         background: linear-gradient(rgb(55, 100, 130), rgb(25, 70, 100));
      }
      
      .morePort {
-         background: radial-gradient(rgba(0, 125, 125, 1), rgba(0, 65, 65, 1));
+         background: linear-gradient(rgb(25, 70, 100), rgb(0, 40, 70));
      }
      
      .contact {
