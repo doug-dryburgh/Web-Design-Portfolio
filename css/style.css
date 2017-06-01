@@ -1,10 +1,5 @@
  @import url('https://fonts.googleapis.com/css?family=Poiret+One|Dosis');
- html,
- body {
-     background-image: url(../images/background1.jpeg);
-     background-size: cover;
-     background-attachment: fixed;
- }
+ 
  /* NAV & RESPONSIVE MENU */
  
  .nav {
@@ -49,6 +44,21 @@
      margin-top: -46px;
      visibility: hidden;
  }
+
+.bkImage {
+     height: 100vh;
+     background-image: url(../images/background1.jpeg);
+     background-size: cover;
+     background-attachment: fixed; /*add switch to scroll*/
+ }
+ .welcome {
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     height: 100vh;
+ }
+
  /* CONTENT */
  
  .background {
@@ -71,11 +81,7 @@
      padding-bottom: 100px;
  }
  
- .welcome {
-     justify-content: center;
-     height: 100vh;
- }
- 
+
  .contact {
      min-height: 400px;
  }

@@ -1,0 +1,11 @@
+html - https://image.freepik.com/free-icon/html-5-logo_318-40263.jpg
+
+css - https://image.freepik.com/free-icon/html-5-logo_318-40263.jpg
+
+js - https://maxcdn.icons8.com/Share/icon/ios7/Logos//javascript1600.png
+
+jquery - 
+http://www.free-icons-download.net/images/jquery-icon-17841.png
+
+git - 
+http://www.it-tech-box.com/wp-content/uploads/2016/05/git-icon.png
