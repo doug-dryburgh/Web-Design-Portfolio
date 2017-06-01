@@ -1,9 +1,9 @@
  @import url('https://fonts.googleapis.com/css?family=Poiret+One|Dosis');
- 
  /* NAV & RESPONSIVE MENU */
  
  .nav {
      width: 100%;
+     height: 40px;
      background-color: rgba(0, 0, 0, .8);
      position: fixed;
      left: 0;
@@ -11,66 +11,175 @@
      z-index: 1;
  }
  
- #menuFull {
+ .nav a {
+     text-decoration: none;
+ }
+ 
+ .nav a p:hover {
+     color: red;
+     transition: .5s;
+ }
+ 
+ .nav p {
+     font-family: 'Poiret One', cursive;
+     font-size: 1.75em;
+     text-shadow: 2px 2px 2px black;
+     line-height: 40px;
+ }
+ 
+ .menuFull {
      display: flex;
      flex-direction: row;
      justify-content: space-around;
-     width: 100%;
  }
  
- #menuSml {
+ .menuSml {
      display: none;
-     width: 100%;
      padding-left: 10px;
  }
  
- #menuContent {
-     display: none;
-     position: relative;
+ .menuContent {
+     max-height: 0;
+     overflow: hidden;
+     position: fixed;
+     top: 40px;
+     left: 0;
+     padding: 0 10px;
+     0 10px;
      z-index: 1;
+     background-color: rgba(0, 0, 0, .8);
  }
  
- #menuSml:hover #menuContent {
+ .menuSml:hover .menuContent,
+ .menuContent:hover .menuContent {
      display: block;
+     max-height: 300px;
+     transition: .5s;
  }
- 
- #menuContent:hover #menuContent {
-     display: block;
- }
+ /* CONTENT */
  
  .anchor {
      display: block;
-     height: 46px;
-     margin-top: -46px;
+     height: 40px;
+     margin-top: -40px;
      visibility: hidden;
  }
-
-.bkImage {
+ 
+ .bkImage {
      height: 100vh;
      background-image: url(../images/background1.jpeg);
      background-size: cover;
-     background-attachment: fixed; /*add switch to scroll*/
+     background-attachment: fixed;
+     /*add switch to scroll*/
  }
- .welcome {
+ 
+ .title {
      text-align: center;
      display: flex;
      flex-direction: column;
      justify-content: center;
      height: 100vh;
  }
-
- /* CONTENT */
  
- .background {
+ .contentBackground {
      background: linear-gradient(rgb(115, 160, 190), rgb(0, 40, 70))
  }
+ 
+ .heading img,
+ #featuredPort img,
+ #moreProjects img {
+     display: block;
+     margin: auto;
+     width: 90%;
+     border-radius: 10px;
+ }
+ 
+ .icons {
+     display: flex;
+     justify-content: space-around;
+     font-size: 5em;
+ }
+ 
+ i {
+     color: white;
+ }
+ 
+ i:hover {
+     color: red;
+     transition: .5s;
+ }
+ /* GENERAL */
+ 
+ h1 {
+     font-size: 3em;
+     font-family: 'Poiret One', cursive;
+     color: white;
+     text-shadow: 2px 2px 2px black;
+ }
+ 
+ h2 {
+     font-size: 2.5em;
+     font-family: 'Poiret One', cursive;
+     color: white;
+     text-shadow: 2px 2px 2px black;
+ }
+ 
+ h3 {
+     color: white;
+     font-size: 2em;
+     font-family: 'Poiret One', cursive;
+     text-align: center;
+ }
+ 
+ h4 {
+     color: white;
+     font-size: 1.75em;
+     font-family: 'Poiret One', cursive;
+     text-align: center;
+ }
+ 
+ p,
+ li {
+     font-size: 1.25em;
+     font-family: 'Dosis', sans-serif;
+     color: white;
+ }
+ 
+ .heading p {
+     font-size: 1.75em;
+     text-align: center;
+     font-family: 'Poiret One', cursive;
+ }
+ 
+ a {
+     color: firebrick
+ }
+ 
+ a:hover {
+     color: red;
+     transition: .5s;
+ }
+ /* RESPONSIVNESS */
+ 
+ @media only screen and (max-width: 576px) {
+     .menuFull {
+         display: none;
+     }
+     .menuSml {
+         display: block;
+     }
+ }
+ /*
+
+
+
  
  .grad {
      height: 200px;
      background: linear-gradient(rgba(115, 160, 190, 0), rgba(115, 160, 190, 1))
  }
- 
- .contentFlex {
+
+.contentFlex {
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -113,7 +222,6 @@
      height: 1px;
      background-color: black;
  }
- /* TEXT & LINKS*/
  
  h1 {
      font-size: 9em;
@@ -168,20 +276,12 @@
      margin-top: 25px;
  }
  
- #menuSml>h5 {
+ .menuSml>h5 {
      color: white;
      cursor: pointer;
  }
  
- .nav a {
-     color: white;
-     text-decoration: none;
- }
- 
- .nav a:hover {
-     color: red;
-     transition: .5s;
- }
+
  
  a,
  a:hover {
@@ -196,7 +296,6 @@
      color: red;
      transition: .5s;
  }
- /* RESPONSIVE */
  
  @media only screen and (max-width: 1199px) {
      h1 {
@@ -223,10 +322,10 @@
  }
  
  @media only screen and (max-width: 576px) {
-     #menuFull {
+     .menuFull {
          display: none;
      }
-     #menuSml {
+     .menuSml {
          display: block;
      }
      h1 {
@@ -256,4 +355,4 @@
      .icons {
          font-size: 3em;
      }
- }
+ } */
